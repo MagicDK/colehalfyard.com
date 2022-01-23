@@ -1,0 +1,134 @@
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 34;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+video {
+  width: 100%;
+}
+
+.nav-container {
+  background: #104F87;
+  border-bottom: 1px solid white;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-container a {
+  color: white;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5em;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul a {
+  display: block;
+  padding: 0 1em;
+}
+
+.social-header {
+  display: none;
+}
+
+.title {
+  background: #104F87;
+  height: 50vh;
+  padding-top: 45px;
+}
+
+.title .content-box {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  background: #286193;
+  margin: 0 auto;
+}
+
+.title .content {
+  position: relative;
+  width: 75%;
+  top: 25%;
+  margin: 0 auto;
+}
+
+.title h1 {
+  position: relative;
+  color: #FFFF;
+  font-size: 3em;
+  text-align: center;
+}
+
+section {
+  background: #5884AB;
+  padding: 4em 2em;
+  text-align: center;
+  font-size: larger;
+}
+
+section video {
+  border: 4px solid #286193;
+}
+
+footer {
+  height: 3em;
+  background: #104F87;
+}
+
+@media only screen and (min-width: 800px) {
+  .title h1 {
+    position: relative;
+    color: #FFFF;
+    font-size: 4em;
+    text-align: center;
+  }
+  .featured-description {
+    text-align: left;
+  }
+  .featured, .portfolio-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% auto;
+        grid-template-columns: 40% auto;
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  .left, .portfolio-left {
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+  }
+  .portfolio-right {
+    padding: 4em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
