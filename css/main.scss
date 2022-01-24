@@ -67,7 +67,7 @@ header {
     h1 {
         position: relative;
         color: #FFFF;
-        font-size: 3em;
+        font-size: 2em;
         text-align: center;
     }
 }
@@ -158,7 +158,7 @@ footer {
         grid-gap: 1em;
     }
 
-    .experience-body, .about-body {
-        //overflow-y: hidden;
-    }
+    // .experience-body, .about-body {
+    //     //overflow-y: hidden;
+    // }
 }
