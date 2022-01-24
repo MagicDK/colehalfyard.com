@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="experience-body">
+    <div class="nav-container">
+        <header>
+            <a href="projects.html" class="logo">colehalfyard.com</a>
+            <nav>
+                <div class="pages-header"></div>
+                    <ul>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="social-header">
+            <ul>
+                <li<a href="#"><img src="../images/github.png" alt="Github"></a>></li>
+                <li><a href="#"><img src="../images/linkedin-original.png" alt="Linkedin"></a></li>
+                <li><a href="#"><img src="../images/email.png" alt="Email"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="title">
+        <div class="content-box">
+            <div class="content">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 530 10" class="line-top">
+                    <line id="Line_4" data-name="line-top" x2="520" transform="translate(5 5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="10"/>
+                </svg>
+                <h1 class="title-text">Experience</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 530 10" class="line-bottom">
+                    <line id="Line_4" data-name="line-bottom" x2="520" transform="translate(5 5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="10"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <section class="experience">
+        <div class="experience-content">
+            <ul>
+                <li class="box1">
+                    <p class="box-title">Education</p>
+                    <p class="box-description">
+                        <strong>June 2020: </strong>Graduated bilingual with honors from Charles P Allen high school.<br><br>
+                        <strong>April 2022: </strong>Soon to be college graduate of Nova Scotia Community College IT Programming stream.
+                    </p>
+                </li>
+                <li class="box2">
+                    <p class="box-title">Work</p>
+                    <p class="box-description">
+                        <strong>June 2020: </strong>Graduated bilingual with honors from Charles P Allen high school.<br><br>
+                        <strong>April 2022: </strong>Soon to be college graduate of Nova Scotia Community College IT Programming stream.
+                </li>
+                <li class="box3">
+                    <p class="box-title">Languages</p>
+                    <p class="box-description">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Mauris vulputate,
+                        urna eu ullamcorper vehicula, leo velit auctor massa,
+                        nec efficitur lectus quam eget lacus. Phasellus fringilla
+                        lectus eu tincidunt sollicitudin. Nulla quis urna sit amet
+                        ligula condimentum ullamcorper. Duis odio augue, commodo a 
+                        turpis sit amet, aliquet tempor ante. Ut sed mi ac odio 
+                        lacinia lacinia sit amet sed tortor.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        var tl = gsap.timeline();
+        tl.from('.line-top', {
+            x: '-100%',
+            opacity: 0
+        }, 'start');
+        tl.from('.line-bottom', {
+            x: '100%',
+            opacity: 0
+        }, 'start');
+        tl.from('.title-text', {
+            opacity: 0
+        });
+        tl.from('.box1', {
+            y: '100%',
+            opacity: 0
+        });
+        tl.from('.box2', {
+            y: '100%',
+            opacity: 0
+        });
+        tl.from('.box3', {
+            y: '100%',
+            opacity: 0
+        });
+    </script> -->
+
+    <footer class="footer-fixed"></footer>
+
+</body>
+</html>

@@ -104,6 +104,40 @@ footer {
   background: #104F87;
 }
 
+.experience {
+  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.experience .experience-content {
+  bottom: 2%;
+  padding-right: 2em;
+  -ms-grid-columns: fit-content();
+      grid-template-columns: fit-content();
+}
+
+.experience .experience-content ul li {
+  background: white;
+  padding: 2em;
+  border-radius: 1em;
+  margin-bottom: 1em;
+}
+
+.experience .experience-content ul li .box-title {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.experience .experience-content ul li .box-description {
+  text-align: left;
+}
+
+.about {
+  height: 80%;
+}
+
 @media only screen and (min-width: 800px) {
   .title h1 {
     position: relative;
@@ -113,6 +147,7 @@ footer {
   }
   .featured-description {
     text-align: left;
+    font-size: larger;
   }
   .featured, .portfolio-container {
     display: -ms-grid;
@@ -129,6 +164,13 @@ footer {
   }
   .portfolio-right {
     padding: 4em;
+  }
+  .experience-content ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    grid-gap: 1em;
   }
 }
 /*# sourceMappingURL=main.css.map */
