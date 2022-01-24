@@ -19,10 +19,6 @@ img {
   width: 100%;
 }
 
-video {
-  width: 100%;
-}
-
 .nav-container {
   background: #104F87;
   border-bottom: 1px solid white;
@@ -97,6 +93,7 @@ section {
 
 section video {
   border: 4px solid #286193;
+  width: 100%;
 }
 
 footer {
@@ -112,15 +109,15 @@ footer {
 }
 
 .experience .experience-content {
-  bottom: 2%;
   padding-right: 2em;
+  padding-left: 2em;
   -ms-grid-columns: fit-content();
       grid-template-columns: fit-content();
 }
 
 .experience .experience-content ul li {
   background: white;
-  padding: 2em;
+  padding: 1em 2em 4em 2em;
   border-radius: 1em;
   margin-bottom: 1em;
 }
@@ -136,6 +133,27 @@ footer {
 
 .about {
   height: 80%;
+  position: relative;
+}
+
+.about .about-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% auto;
+      grid-template-columns: 50% auto;
+}
+
+.about .about-content .left-side {
+  place-content: center;
+  position: absolute;
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-top: 3em;
+}
+
+.about .about-content img {
+  border: 4px solid #286193;
+  width: 100%;
 }
 
 @media only screen and (min-width: 800px) {
@@ -171,6 +189,9 @@ footer {
     -ms-grid-columns: (auto)[3];
         grid-template-columns: repeat(3, auto);
     grid-gap: 1em;
+  }
+  .experience-body, .about-body {
+    overflow-y: hidden;
   }
 }
 /*# sourceMappingURL=main.css.map */
