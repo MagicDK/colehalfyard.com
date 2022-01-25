@@ -12,7 +12,7 @@
         <header>
             <a href="projects.html" class="logo">colehalfyard.com</a>
             <nav>
-                <div class="pages-header"></div>
+                <div class="pages-header">
                     <ul>
                         <li><a href="projects.html">Projects</a></li>
                         <li><a href="experience.html">Experience</a></li>
@@ -23,7 +23,7 @@
         </header>
         <div class="social-header">
             <ul>
-                <li<a href="#"><img src="../images/github.png" alt="Github"></a>></li>
+                <li><a href="#"><img src="../images/github.png" alt="Github"></a></li>
                 <li><a href="#"><img src="../images/linkedin-original.png" alt="Linkedin"></a></li>
                 <li><a href="#"><img src="../images/email.png" alt="Email"></a></li>
             </ul>
@@ -36,7 +36,8 @@
                 <img src="../images/Site-Photo.jpg" alt="Me">
             </div>
             <div class="right-side">
-                <p>
+                <h1 class="about-title">About Me</h1>
+                <p class="about-description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam orci nisi, sit amet accumsan tortor efficitur quis.
                     Integer eget consequat augue, at aliquam sem. Aliquam erat volutpat. Maecenas molestie libero sed semper suscipit. Quisque
                     quis fermentum tellus. Nunc ut condimentum ligula. Nulla fermentum feugiat arcu sed semper. Fusce rutrum elit diam, sit
@@ -47,6 +48,20 @@
     </section>
 
     <footer class="footer-fixed"></footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        var tl = gsap.timeline();
+        tl.from('.left-side', {
+            x: '-250%',
+        }, 'start');
+        tl.from('.right-side', {
+            x: '250%',
+        }, 'start');
+    </script>
 
 </body>
 </html>

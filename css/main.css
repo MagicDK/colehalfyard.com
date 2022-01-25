@@ -111,8 +111,6 @@ footer {
 .experience .experience-content {
   padding-right: 2em;
   padding-left: 2em;
-  -ms-grid-columns: fit-content();
-      grid-template-columns: fit-content();
 }
 
 .experience .experience-content ul li {
@@ -132,28 +130,22 @@ footer {
 }
 
 .about {
-  height: 80%;
-  position: relative;
+  background: #5884AB;
+  height: auto;
+  padding: 4em 2em;
+  text-align: center;
+  font-size: larger;
 }
 
-.about .about-content {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% auto;
-      grid-template-columns: 50% auto;
-}
-
-.about .about-content .left-side {
-  place-content: center;
-  position: absolute;
-  padding-left: 5em;
-  padding-right: 5em;
-  padding-top: 3em;
-}
-
-.about .about-content img {
+.about .right-side {
+  padding: 0 2em 1em 2em;
+  background: white;
   border: 4px solid #286193;
-  width: 100%;
+}
+
+.about img {
+  border: 4px solid #286193;
+  width: 58%;
 }
 
 @media only screen and (min-width: 800px) {
@@ -167,20 +159,22 @@ footer {
     text-align: left;
     font-size: larger;
   }
-  .featured, .portfolio-container {
+  .portfolio-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 40% auto;
-        grid-template-columns: 40% auto;
+    -ms-grid-columns: 30% auto;
+        grid-template-columns: 30% auto;
     padding-left: 5em;
     padding-right: 5em;
   }
-  .left, .portfolio-left {
+  .portfolio-left {
     display: -ms-grid;
     display: grid;
     place-content: center;
   }
   .portfolio-right {
+    display: -ms-grid;
+    display: grid;
     padding: 4em;
   }
   .experience-content ul {
@@ -192,6 +186,35 @@ footer {
   }
   .experience-body, .about-body {
     overflow-y: hidden;
+    background: #104F87;
+  }
+  .experience-body .nav-container, .about-body .nav-container {
+    position: relative;
+    display: block;
+  }
+  .about-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
+    padding-left: 5em;
+    padding-right: 5em;
+    width: 85%;
+    margin: 0 auto;
+    place-content: center;
+  }
+  .right-side {
+    height: 92.9%;
+    width: 65%;
+    text-align: left;
+    background: white;
+    border: 4px solid #286193;
+  }
+  .right-side .about-title {
+    text-align: center;
+  }
+  .right-side .about-description {
+    padding: 0 1em 0 1em;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -97,7 +97,7 @@ footer {
         //bottom: 2%;
         padding-right: 2em;
         padding-left: 2em;
-        grid-template-columns: fit-content();
+        //grid-template-columns: fit-content();
         ul li {
             background: white;
             padding: 1em 2em 4em 2em;
@@ -115,22 +115,19 @@ footer {
 }
 
 .about {
-    height: 80%;
-    position: relative;
-    .about-content {
-            display: grid;
-            grid-template-columns: 50% auto;
-        .left-side {
-            place-content: center;
-            position: absolute;
-            padding-left: 5em;
-            padding-right: 5em;
-            padding-top: 3em;
-        }
-        img {
-            border: 4px solid #286193;
-            width: 100%;
-        }
+    background: #5884AB;
+    height: auto;
+    padding: 4em 2em;
+    text-align: center;
+    font-size: larger;
+    .right-side {
+        padding: 0 2em 1em 2em;
+        background: white;
+        border: 4px solid #286193;
+    }
+    img {
+        border: 4px solid #286193;
+        width: 58%;
     }
 }
 
@@ -153,19 +150,20 @@ footer {
         text-align: left;
         font-size: larger;
     }
-    .featured, .portfolio-container {
+    .portfolio-container {
         display: grid;
-        grid-template-columns: 40% auto;
+        grid-template-columns: 30% auto;
         padding-left: 5em;
         padding-right: 5em;
     }
 
-    .left, .portfolio-left {
+    .portfolio-left {
         display: grid;
         place-content: center;
     }
 
     .portfolio-right {
+        display: grid;
         padding: 4em;
     }
 
@@ -179,5 +177,43 @@ footer {
 
     .experience-body, .about-body {
         overflow-y: hidden;
+        background: #104F87;
+        .nav-container {
+            position: relative;
+            display: block;
+        }
     }
+
+    .about-content {
+        display: grid;
+        grid-template-columns: 50% auto;
+        padding-left: 5em;
+        padding-right: 5em;
+        width: 85%;
+        margin: 0 auto;
+        place-content: center;
+    }
+
+    .left-side {
+        //width: 55%;
+        //padding-left: 8em;
+    }
+
+    .right-side {
+        //display: grid;
+        //place-content: left;
+        //padding: 2em 2em 0 1em;
+        height: 92.9%;
+        width: 65%;
+        text-align: left;
+        background: white;
+        border: 4px solid #286193;
+        .about-title {
+            text-align: center;
+        }
+        .about-description {
+            padding: 0 1em 0 1em;
+        }
+    }
+
 }
