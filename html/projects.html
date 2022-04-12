@@ -111,23 +111,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
-        gsap.registerPlugin(ScrollTrigger);
-        var tl = gsap.timeline();
-        tl.from('.line-top', {
-            x: '-100%',
-            opacity: 0
-        }, 'start');
-        tl.from('.line-bottom', {
-            x: '100%',
-            opacity: 0
-        }, 'start');
-        tl.from('.title-text', {
-            opacity: 0
-        });
-        tl.from('.portfolio-container', {
-            y: '100%',
-            opacity: 0
-        }, 'end');
+        window.onload = function() {
+            gsap.registerPlugin(ScrollTrigger);
+            var tl = gsap.timeline();
+            tl.from('.line-top', {
+                x: '-100%',
+                opacity: 0
+            }, 'start');
+            tl.from('.line-bottom', {
+                x: '100%',
+                opacity: 0
+            }, 'start');
+            tl.from('.title-text', {
+                opacity: 0
+            });
+            tl.from('.portfolio-container', {
+                y: '100%',
+                opacity: 0
+            }, 'end');
+        }
     </script>
 
 </body>
